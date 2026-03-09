@@ -6,7 +6,7 @@ RUN --mount=type=cache,target=/go/pkg/mod \
     --mount=type=cache,target=/root/.cache/go-build \
     xcaddy build \
         --output /usr/bin/caddy \
-        --with github.com/caddy-dns/cloudns
+        --with github.com/caddy-dns/cloudns@v1.1.0
 
 FROM caddy:2
 
