@@ -6,7 +6,7 @@ A custom [Caddy](https://caddyserver.com/) container image built with extensions
 
 | Module | Description |
 |--------|-------------|
-| [caddy-dns/cloudflare](https://github.com/caddy-dns/cloudflare) | Cloudflare DNS provider for ACME DNS-01 challenges |
+| [caddy-dns/cloudns](https://github.com/caddy-dns/cloudns) | ClouDNS provider for ACME DNS-01 challenges |
 
 ## Usage
 
@@ -51,7 +51,7 @@ To add more Caddy modules, edit the `Dockerfile` and add `--with` flags to the `
 RUN --mount=type=cache,target=/go/pkg/mod \
     --mount=type=cache,target=/root/.cache/go-build \
     xcaddy build \
-        --with github.com/caddy-dns/cloudflare \
+        --with github.com/caddy-dns/cloudns \
         --with github.com/your/module
 ```
 
