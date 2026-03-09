@@ -16,7 +16,7 @@ Pull the image from the GitHub Container Registry:
 docker pull ghcr.io/sbuzonas/homelab-caddy:latest
 ```
 
-Or use it in a `docker-compose.yml`:
+Or use it in a `compose.yml`:
 
 ```yaml
 services:
